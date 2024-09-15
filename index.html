@@ -5,47 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
-  <body >
+  <body>
     <div class="container">
-    <header>
-      <form>
-        <input type="search" placeholder="Please enter a city..." required id= "search-input" class="input-search"/>
-        <input type="submit" value="Search" class="input-submit" />
-      </form>
-    </header>
-    <main>
-      <div>
-      <h1 id="city" class="parisFont"></h1>
-      <p>
-        Sunday <strong id = "time"></strong>, <span id = "description"></span></br> 
-        Humidity: <strong id="humidity"></strong>, Wind:<strong id="windSpeed"></strong>
-      </p>
-      </div>
-      <div class="temperature">
-      <div class="temp-symbol">☀</div><div id = "temperature" class="temp-size" ></div> <div class="temp-unit">°C</div>
-      </div>
-    </main>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/LuhlangaLoveness" target="_blank"
-          >Loveness Luhlanga</a
-        >
-        and is
-        <a href="https://github.com/LuhlangaLoveness" target="_blank">
-          on GitHub</a
-        >
-        and
-        <a href="https://lovely-pony-4847f1.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Please enter a city..."
+            required
+            id="search-input"
+            class="input-search"
+          />
+          <input type="submit" value="Search" class="input-submit" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1 id="city" class="parisFont"></h1>
+          <p>
+            Sunday <strong id="time"></strong>, <span id="description"></span
+            ><br />
+            Humidity: <strong id="humidity"></strong>, Wind:<strong
+              id="windSpeed"
+            ></strong>
+          </p>
+        </div>
+        <div class="temperature">
+          <div id="icon">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              class="temp-symbol"
+            />
+          </div>
+          <div id="temperature" class="temp-size"></div>
+          <div class="temp-unit">°C</div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/LuhlangaLoveness" target="_blank"
+            >Loveness Luhlanga</a
+          >
+          and is
+          <a href="https://github.com/LuhlangaLoveness" target="_blank">
+            on GitHub</a
+          >
+          and
+          <a href="https://lovely-pony-4847f1.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
     </div>
     <script src="index.js"></script>
   </body>

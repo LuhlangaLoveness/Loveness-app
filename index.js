@@ -7,12 +7,15 @@ function refreshTempSize(response) {
   let windSpeedElement = document.querySelector("#windSpeed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
+
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity} %`;
   windSpeedElement.innerHTML = `${response.data.wind.speed} Km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
   timeElement.innerHTML = formatDate(date);
+  iconElement.innerHTML = `<img src= <img src="${response.data.condition.icon_url} "class = "temp-symbol"/>`;
 }
 function searchCity(city) {
   let apiKey = "5c293o80a8f158401teffb34fdeeebb7";
