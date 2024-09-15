@@ -13,30 +13,23 @@ body {
 }
 .temperature {
   display: flex;
-  position: fixed;
-  top: 15px;
-  left: 400px;
-  font-size: 45px;
-  font-weight: bold;
+  position: absolute;
+  top: 200px;
+  left: 600px;
 }
 .temp-symbol {
-  position: fixed;
-  top: 230px;
-  left: 880px;
+  display: block;
   font-size: 25px;
   font-weight: bold;
 }
 .temp-unit {
-  position: fixed;
-  top: 225px;
-  left: 950px;
+  display: block;
+
   font-size: 30px;
   font-weight: bold;
 }
 .temp-size {
-  position: fixed;
-  top: 220px;
-  left: 900px;
+  display: block;
   font-size: 45px;
   font-weight: bold;
 }
