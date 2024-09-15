@@ -15,7 +15,7 @@ function refreshTempSize(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed} Km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
   timeElement.innerHTML = formatDate(date);
-  iconElement.innerHTML = `<img src= <img src="${response.data.condition.icon_url} "class = "temp-symbol"/>`;
+  iconElement.innerHTML = `<img src= <img src="${response.data.condition.icon_url}" class = "temp-symbol"/>`;
 }
 function searchCity(city) {
   let apiKey = "5c293o80a8f158401teffb34fdeeebb7";
